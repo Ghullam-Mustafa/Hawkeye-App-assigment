@@ -12,6 +12,9 @@ export default class App extends Component {
           <Text style={styles.text2}>Make your own private</Text>
           <Text style={styles.text3}> travel plan</Text>
         </View>
+        <View style={styles.three}>
+          <Text>Formulate your strategy to receive wonderful gift packs</Text>
+        </View>
       </View>
     );
   }
@@ -26,16 +29,16 @@ const styles = StyleSheet.create({
   },
   one: {
     flex: 1,
-    paddingTop: 101,
+    marginTop: 101,
     alignItems: 'center',
     justifyContent: 'center',
-    
+
   },
   two: {
     flex: 1,
-    paddingTop: 45,
+    marginTop: 45,
     alignItems: 'center',
-    
+
   },
   text2: {
 
@@ -43,7 +46,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     color: '#000', // Text color should be set in the Text component, not here
-    fontFamily: 'Poppins', // Make sure 'Poppins' font is correctly installed on your device
+    fontFamily: 'Poppins-Normal', // Make sure 'Poppins' font is correctly installed on your device
     fontSize: 28, // Font size in device-independent pixels (dp)
     fontStyle: 'normal',
     fontWeight: '600', // Font weight should be a string
@@ -63,4 +66,9 @@ const styles = StyleSheet.create({
     lineHeight: 30, // You can specify line height as a number
     letterSpacing: -0.42,
   },
+  three: {
+    flex: 1,
+    paddingTop: 12,
+    alignItems: 'center',
+  }
 });
