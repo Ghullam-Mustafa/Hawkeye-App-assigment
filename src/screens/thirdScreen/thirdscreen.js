@@ -1,12 +1,11 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import Navigation from './src/navigation/navigation'
 
-export default function App() {
+export default function Thirdscreen() {
   return (
-    <>
-    <Navigation/>
-    </>
+    <View>
+      <Text>T</Text>
+    </View>
   )
 }
 
