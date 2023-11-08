@@ -7,7 +7,7 @@ export default function FirstScreen() {
   const navigation = useNavigation()
 
   const Gothird =()=>{
-navigation.navigate("third")
+navigation.navigate("second")
   }
 
   return (
