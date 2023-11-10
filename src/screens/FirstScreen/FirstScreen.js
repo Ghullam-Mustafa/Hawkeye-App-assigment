@@ -59,7 +59,7 @@ const styles = StyleSheet.create({
 
   },
   two: {
-    flex: 3,
+    flex: 2,
     paddingTop: 45,
     alignItems: 'center',
     justifyContent:'center'
