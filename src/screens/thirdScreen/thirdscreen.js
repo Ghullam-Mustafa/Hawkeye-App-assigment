@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, TouchableOpacity , Image} from 'react-native'
+import { StyleSheet, Text, View, TouchableOpacity, Image } from 'react-native'
 import React from 'react'
 import { useNavigation } from '@react-navigation/native'
 
@@ -6,41 +6,41 @@ export default function SecondScreen() {
 
   const navigation = useNavigation()
 
-  const Gothird =()=>{
-navigation.navigate("third")
+  const Gothird = () => {
+    navigation.navigate("main")
   }
 
   return (
     <View style={styles.container}>
-    <View style={styles.one}>
-      <Image source={require('../../assets/three.png')}/>
-    </View>
-    <View style={styles.two}>
-      <Text style={styles.text2}>High-end leisure projects </Text>
-      <Text style={styles.text3}> to choose from </Text>
-      <Text style={styles.text4}>The world's first-class modern leisure  {'\n'}  and entertainment method</Text>
-      
-
-    </View>
-    <View style={styles.three}>
-      {/* <Text style={styles.text4}>Formulate your strategy to receive wonderful gift packs</Text> */}
-    </View>
-
-
-    <TouchableOpacity style={styles.four} onPress={Gothird} >
-      <View style={styles.button}>
-        <Image source={require('../../assets/Arrow.png')} />
+      <View style={styles.one}>
+        <Image source={require('../../assets/three.png')} />
       </View>
-    </TouchableOpacity>
+      <View style={styles.two}>
+        <Text style={styles.text2}>High-end leisure projects </Text>
+        <Text style={styles.text3}> to choose from </Text>
+        <Text style={styles.text4}>The world's first-class modern leisure  {'\n'}  and entertainment method</Text>
 
-    <View style={styles.five}>
-     
-     <Text style={styles.text5}>  
-     <Image  source={require('../../assets/Zaps.png')} />
-      Nordic Vacation Sponsor</Text>
+
+      </View>
+      <View style={styles.three}>
+        {/* <Text style={styles.text4}>Formulate your strategy to receive wonderful gift packs</Text> */}
+      </View>
+
+      <View style={styles.four}>
+        <TouchableOpacity  onPress={Gothird} >
+          <View style={styles.button}>
+            <Image source={require('../../assets/Arrow.png')} />
+          </View>
+        </TouchableOpacity>
+
+        <View style={styles.five}>
+
+          <Text style={styles.text5}>
+            <Image source={require('../../assets/Zaps.png')} />
+            Nordic Vacation Sponsor</Text>
+        </View>
+      </View>
     </View>
-
-  </View>
   )
 }
 
@@ -52,17 +52,17 @@ const styles = StyleSheet.create({
     // justifyContent: 'center',
   },
   one: {
-    flex: 2,
+    flex: 3,
     paddingTop: 102,
     alignItems: 'center',
     justifyContent: 'center',
 
   },
   two: {
-    flex: 3,
+    flex: 2,
     paddingTop: 45,
     alignItems: 'center',
-    justifyContent:'center'
+    justifyContent: 'center'
 
   },
   text2: {
@@ -96,8 +96,8 @@ const styles = StyleSheet.create({
     paddingTop: 12,
     alignItems: 'center',
   }, text4: {
-    paddingTop: 45,
-    flex: 1,
+    paddingTop: 12,
+    // flex: 1,
     alignItems: 'center',
     color: '#B4B4B4', // Text color in React Native
     fontFamily: 'Poppins', // Use a valid font family if it's available on your device
@@ -108,9 +108,9 @@ const styles = StyleSheet.create({
     letterSpacing: -0.27, // Letter spacing (adjust as needed)
     textAlign: 'center', // Text alignment
   },
- 
+
   four: {
-    flex: 1,
+    // flex: 1,
     justifyContent: 'center',
     alignItems: 'center'
   },
@@ -123,17 +123,18 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-  five:{
-    flex:1,
-    justifyContent:'center',
-    alignItems:'center'
+  five: {
+    // flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center'
   },
-  text5:{
+  text5: {
     color: '#595959',
     fontFamily: 'Poppins',
     fontSize: 14,
+    padding: 10,
     fontStyle: 'normal',
     fontWeight: '400',
-    lineHeight: 20, 
+    lineHeight: 20,
   }
 })

@@ -26,19 +26,21 @@ navigation.navigate("second")
       {/* <Text style={styles.text4}>Formulate your strategy to receive wonderful gift packs</Text> */}
     </View>
 
-
+<View style={styles.four}>
     <TouchableOpacity style={styles.four} onPress={Gothird} >
       <View style={styles.button}>
         <Image source={require('../../assets/Arrow.png')} />
-      </View>
+      </View> 
+      
     </TouchableOpacity>
-
     <View style={styles.five}>
      
      <Text style={styles.text5}>  
      <Image  source={require('../../assets/Zaps.png')} />
       Nordic Vacation Sponsor</Text>
     </View>
+</View>
+   
 
   </View>
   )
@@ -52,22 +54,22 @@ const styles = StyleSheet.create({
     // justifyContent: 'center',
   },
   one: {
-    flex: 2,
-    paddingTop: 102,
+    flex: 3,
+    paddingTop: 45,
     alignItems: 'center',
     justifyContent: 'center',
 
   },
   two: {
     flex: 2,
-    paddingTop: 45,
+    paddingTop: 100,
     alignItems: 'center',
     justifyContent:'center'
 
   },
   text2: {
 
-
+    
     alignItems: 'center',
     justifyContent: 'center',
     color: '#000', // Text color should be set in the Text component, not here
@@ -96,8 +98,8 @@ const styles = StyleSheet.create({
     paddingTop: 12,
     alignItems: 'center',
   }, text4: {
-    paddingTop: 45,
-    flex: 1,
+    paddingTop: 12,
+    // flex: 1,
     alignItems: 'center',
     color: '#B4B4B4', // Text color in React Native
     fontFamily: 'Poppins', // Use a valid font family if it's available on your device
@@ -110,7 +112,7 @@ const styles = StyleSheet.create({
   },
  
   four: {
-    flex: 1,
+    // flex: 1,
     justifyContent: 'center',
     alignItems: 'center'
   },
@@ -124,7 +126,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   five:{
-    flex:1,
+    // padding:10 ,
+    // flex:1,
     justifyContent:'center',
     alignItems:'center'
   },
@@ -132,6 +135,7 @@ const styles = StyleSheet.create({
     color: '#595959',
     fontFamily: 'Poppins',
     fontSize: 14,
+    padding: 10,
     fontStyle: 'normal',
     fontWeight: '400',
     lineHeight: 20, 

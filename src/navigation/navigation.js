@@ -11,7 +11,11 @@ export default function Navigation() {
 const Stack = createNativeStackNavigator();
   return (
     <NavigationContainer>
-      <Stack.Navigator  >
+      <Stack.Navigator  
+      screenOptions={{
+        headerShown: false, // This will hide the header for all screens in this stack
+      }} 
+       >
         <Stack.Screen name="first" component={FirstScreen} />
         <Stack.Screen name="second" component={SecondScreen} />
         <Stack.Screen name="third" component={Thirdscreen} />
