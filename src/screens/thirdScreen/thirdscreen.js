@@ -2,12 +2,12 @@ import { StyleSheet, Text, View, TouchableOpacity, Image } from 'react-native'
 import React from 'react'
 import { useNavigation } from '@react-navigation/native'
 
-export default function SecondScreen() {
+export default function ThirdScreen() {
 
   const navigation = useNavigation()
 
   const Gothird = () => {
-    navigation.navigate("main")
+    navigation.navigate("bottom")
   }
 
   return (
